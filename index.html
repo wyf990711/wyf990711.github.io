@@ -161,6 +161,67 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2020/10/30/vuecli3/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="wyf">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="wyf">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/10/30/vuecli3/" class="post-title-link" itemprop="url">vuecli3</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2020-10-30 15:01:06 / 修改时间：15:03:35" itemprop="dateCreated datePublished" datetime="2020-10-30T15:01:06+08:00">2020-10-30</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p><strong>错误截图如下图所示</strong><br> <img src="https://img2020.cnblogs.com/blog/2193886/202010/2193886-20201029203934871-1102961798.png" alt="img"></p>
+<p><strong>解决方式：</strong><br> 首先确保所用到的vue-cli，npm，node等版本要高一些。然后才采取下面的方法<br> （1）有可能是因为没有清除npm缓存的原因。使用下面这个指令：npm cache clean –force；来清除npm的缓存。<br> 如果还不能的的话就看下边。<br> （2）首先找到C:\Users\用户名 这个路径里面的.vuerc文件，通过记事本或者VScode打开这个json文件，将  “useTaobaoRegistry”: true,里面的true改为false，这样就基本上能解决问题了。<br> <strong>重点</strong><br> 如果上边的办法都不行的话，那就是权限问题，也就是说没有用管理员身份运行。<br> 解决办法：鼠标右键点击属性，然后在点击兼容性，如下图所示，将“以管理员身份运行此程序”选中，点击应用即可。</p>
+<p><img src="https://img2020.cnblogs.com/blog/2193886/202010/2193886-20201029205602578-194799945.png" alt="img"> </p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://example.com/2020/10/30/blog-text/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -350,9 +411,15 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">2</span>
+          <span class="site-state-item-count">3</span>
           <span class="site-state-item-name">日志</span>
         </a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
 </div>
